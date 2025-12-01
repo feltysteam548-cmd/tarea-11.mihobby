@@ -1,0 +1,143 @@
+/* ===== CONFIGURACIÓN GENERAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f0f3f8;
+  color: #333;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* ===== HERO / HEADER ===== */
+.hero {
+  background-image: url("img/paisaje1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 55vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+}
+
+.hero-title {
+  color: #fff;
+  font-size: 3rem;
+  z-index: 1;
+  text-shadow: 0 0 15px rgba(0,0,0,0.6);
+  animation: fadeDown 1.5s ease;
+}
+
+/* ===== MENÚ ===== */
+.menu {
+  position: absolute;
+  bottom: 20px;
+  z-index: 2;
+}
+
+.menu a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #ffd700;
+  letter-spacing: 1px;
+}
+
+/* ===== SECCIONES ===== */
+.section {
+  max-width: 900px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Animación suave al aparecer */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+/* ===== GALERÍA ===== */
+.galeria .grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.galeria img {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 12px;
+  transition: transform 0.4s, box-shadow 0.4s;
+  cursor: pointer;
+}
+
+.galeria img:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 25px rgba(0,0,0,0.3);
+}
+
+/* ===== ENLACES ===== */
+.links li {
+  margin: 10px 0;
+}
+
+.links a {
+  color: #003366;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  color: #ff9900;
+  padding-left: 8px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 25px;
+  margin-top: 40px;
+  background: #e6e6e6;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* ===== ANIMACIONES ===== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
